@@ -60,8 +60,8 @@ const tabs: ITab[] = [
 
 export default function App() {
   return (
-    <main className="bg-main-950 text-main-50 min-h-screen w-full">
-      <Tabs defaultValue="dev" className="p-4 text-xl">
+    <main className="container mx-auto">
+      <Tabs defaultValue={tabs[0].value} className="p-4 text-xl">
         <TabsList>
           {tabs.map((tab) => (
             <TabsTrigger key={tab.id} value={tab.value}>
